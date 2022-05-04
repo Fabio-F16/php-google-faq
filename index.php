@@ -11,6 +11,24 @@ include('data.php');
     <title>Php Google Faq</title>
 </head>
 <body>
+<header>
+ 
+</header>
+<main>
+    <div class="container">
+     
+        <?php
+        
+       foreach($faq as $item) {
+           echo('<h2>' . $item['question'] . '</h2>');
+           echo('<p>' . $item['answer'] . '</p>');
 
+       }
+        ?>
+
+       
+      
+    </div>
+</main>
 </body>
 </html>
