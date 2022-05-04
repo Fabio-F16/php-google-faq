@@ -13,7 +13,21 @@ include('data.php');
 </head>
 <body>
 <header>
- 
+    <div class="row">
+        <div class="col-12 d-flex align-items-center">
+            <img src="img/Google_2015_logo.svg.png" alt="">
+            <h4>Privacy e termini</h4>
+        </div>
+        <div class="col-12">
+            <ul>
+                <li>Introduzione</li>
+                <li>Norme sulla privacy</li>
+                <li>Termini di servizio</li>
+                <li>Tecnologie</li>
+                <li>Domande frequenti</li>
+            </ul>
+        </div>
+    </div>
 </header>
 <main>
     <div class="container">
@@ -35,7 +49,24 @@ include('data.php');
     </div>
 </main>
 </body>
-<style>
+<style lang="scss">
+header{
+    padding-top: 10px;
+    padding-left: 10px;
+    border-bottom: 0.5px solid grey;
+}
+header img {
+    width:5%;
+    margin-right:10px;
+}
+header ul{
+    margin-top: 10px;
+    padding-left:0px;
+}
+header li{
+    display: inline;
+    margin-right: 20px;
+}
     
 </style>
 </html>
