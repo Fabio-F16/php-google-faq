@@ -34,25 +34,34 @@ include('data.php');
      
         <?php
             foreach($faq as $item) {
-                    $question = $item['question'];
-                    $answer = $item['answer'];
-            
-                    echo('<div>' . '<h2>' . $question . '</h2>');
-                    echo('<p>' . $answer . '</p>' . '</div>');
+                $question = $item['question'];
+                $answer = $item['answer'];
+        
+                // echo('<div>' . '<h2>' . $question . '</h2>');
+                // echo('<p>' . $answer . '</p>' . '</div>');
 
                 // $paragraph = explode('.', $answer);
                 // for($i = 0; $i < count($paragraph); $i++) {
                 //     echo('<p>' . $paragraph[$i] . '</p>');
                 // }
+        ?>
+        <div>
+            <h2><?php echo $question?></h2>
+            <p><?php echo $answer?></p>
+        </div>
+
+
+        <?php
             }
         ?>
+   
     </div>
 </main>
 </body>
 <style lang="scss">
 header{
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 10px;
+    /* padding-left: 10px; */
     border-bottom: 0.5px solid grey;
 }
 header img {
