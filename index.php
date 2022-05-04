@@ -19,19 +19,23 @@ include('data.php');
     <div class="container">
      
         <?php
-        
-       foreach($faq as $item) {
-           $question = $item['question'];
-           $answer = $item['answer'];
-           echo('<div>' . '<h2>' . $question . '</h2>');
-           echo('<p>' . $answer . '</p>' . '</div>');
+            foreach($faq as $item) {
+                    $question = $item['question'];
+                    $answer = $item['answer'];
+            
+                    echo('<div>' . '<h2>' . $question . '</h2>');
+                    echo('<p>' . $answer . '</p>' . '</div>');
 
-       }
+                // $paragraph = explode('.', $answer);
+                // for($i = 0; $i < count($paragraph); $i++) {
+                //     echo('<p>' . $paragraph[$i] . '</p>');
+                // }
+            }
         ?>
-
-       
-      
     </div>
 </main>
 </body>
+<style>
+    
+</style>
 </html>
