@@ -45,7 +45,7 @@ include('data.php');
                 //     echo('<p>' . $paragraph[$i] . '</p>');
                 // }
         ?>
-        <div>
+        <div class="section">
             <h2><?php echo $question?></h2>
             <p><?php echo $answer?></p>
         </div>
@@ -61,7 +61,6 @@ include('data.php');
 <style lang="scss">
 header{
     padding: 10px;
-    /* padding-left: 10px; */
     border-bottom: 0.5px solid grey;
 }
 header img {
@@ -76,6 +75,17 @@ header li{
     display: inline;
     margin-right: 20px;
 }
-    
+header li:hover{
+    cursor: pointer;
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+.section{
+    margin-top: 60px;
+}
+
+main ol li{
+margin-top: 10px;
+}
 </style>
 </html>
